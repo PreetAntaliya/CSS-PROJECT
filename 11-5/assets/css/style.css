@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+:root {
+	--bg-color: #112429;
+	--btn: #262828;
+	--sidebar-color: #182f35;
+	--primary-color: #7ae7c7;
+	--secondary-color: #6d8683;
+	--white-color: #ffffff;
+	--black-color: #07242C;
+	--black-700: #4a5e61;
+	--black-800: #626262;
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-600: 600;
+	--fw-700: 700;
+	--fw-900: 900;
+	--fs-16: 16px;
+	--fs-20: 20px;
+	--fs-22: 22px;
+	--fs-24: 24px;
+	--fs-36: 36px;
+	--fs-55: 55px;
+	--fs-70: 70px;
+	--lh: 1.5;
+	--padding-left: 12px;
+	--padding-right: 12px;
+	--inter: 'Inter';
+	--space: 'Space Grotesk';
+}
+
+body {
+	width: 100%;
+	background-color: var(--bg-color);
+	color: var(--white-color);
+	font-family: var(--inter);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #262828;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+	max-width: 1210px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+}
+
+
+.w-1 {
+	width: 8.33%;
+}
+
+.w-2 {
+	width: 16.66%;
+}
+
+.w-3 {
+	width: 25%;
+}
+
+.w-4 {
+	width: 33.33%;
+}
+
+.w-5 {
+	width: 41.66%;
+}
+
+.w-6 {
+	width: 50%;
+}
+
+.w-7 {
+	width: 58.33%;
+}
+
+.w-8 {
+	width: 66.66%;
+}
+
+.w-9 {
+	width: 75%;
+}
+
+.w-10 {
+	width: 83.33%;
+}
+
+.w-11 {
+	width: 91.66%;
+}
+
+.w-12 {
+	width: 100%;
+}
+
+.w-1,
+.w-2,
+.w-3,
+.w-5,
+.w-6,
+.w-7,
+.w-8,
+.w-9,
+.w-11,
+.w-12 {
+	padding-left: var(--padding-left);
+	padding-right: var(--padding-right);
+}
+
+.d-flex {
+	display: flex;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+/* header start */
+
+.head {
+	height: 100vh;
+	background-color: var(--sidebar-color);
+	position: sticky;
+	top: 0;
+
+}
+
+.logo {
+	padding: 50px 0;
+}
+
+nav ul li {
+	padding: 10px;
+	text-transform: capitalize;
+}
+
+nav ul li a {
+	font-size: var(--fs-16);
+	font-family: var(--inter);
+	color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+	color: var(--primary-color);
+}
+
+nav ul li:first-child a {
+	color: var(--primary-color);
+}
+
+.btn {
+	margin: 50px;
+	padding: 12px 20px;
+	background-color: rgba(109, 131, 134, 0.3);
+	color: var(--primary-color);
+	border: 0;
+	border-radius: 70px;
+	font-family: var(--space);
+	font-weight: 900;
+}
+
+.btn:hover {
+	background-color: var(--primary-color);
+	color: var(--black-color);
+}
+
+.head p {
+	color: var(--white-color);
+	font-family: var(--inter);
+	font-size: var(--fs-16);
+}
+
+.icon {
+	position: absolute;
+	margin: 20px 0;
+	color: var(--white-color);
+	letter-spacing: 4px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+.icon i:hover {
+	color: var(--primary-color);
+}
+
+
+/* header end */
+
+
+/* banner start */
+
+.banner {
+	position: relative;
+	height: 100vh;
+}
+
+.content {
+	padding: 200px 0;
+	text-transform: uppercase;
+}
+
+.content span {
+	color: var(--primary-color);
+	font-size: var(--fs-16);
+	padding: 5px 20px;
+	border-radius: 5px;
+	background-color: var(--sidebar-color);
+	font-family: var(--space);
+}
+
+.content h1 {
+	font-size: var(--fs-70);
+	font-family: var(--space);
+	font-weight: var(--fw-500);
+	margin: 40px 0;
+}
+
+.content h1 span {
+	font-size: var(--fs-70);
+	background: transparent;
+	padding: 0;
+}
+
+.content p {
+	font-size: var(--fs-16);
+	font-family: var(--space);
+	font-weight: var(--fw-500);
+	font-size: var(--fs-20);
+	text-transform: none;
+}
+
+.btn1 {
+	background-color: var(--primary-color);
+	color: var(--btn);
+	padding: 10px 30px;
+	border-radius: 70px;
+	font-weight: var(--fw-600);
+	border: 0;
+	font-size: var(--fs-22);
+	margin: 40px 0;
+}
+
+.slide-img {
+	justify-content: space-between;
+	margin: 90px 0;
+}
+
+.man-img {
+	position: absolute;
+	background-image: url(../img/coaching3-slider-pic2.svg);
+	background-repeat: no-repeat;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+/* banner end */
+
+/* about start */
+
+.about {
+	margin: 250px 0 0 0;
+}
+
+.about .thought h2 {
+	font-size: var(--fs-70);
+	font-family: var(--space);
+	font-weight: var(--fw-500);
+	color: var(--secondary-color);
+}
+
+.portfolio {
+	background-image: url(../img/coaching3-section-bg1.svg);
+	background-repeat: no-repeat;
+	background-position: -200px 70px;
+	margin: 100px 0;
+}
+
+.portfolio .men-img1 img {
+	border-radius: 30px;
+}
+
+.portfolio .about-txt h3 {
+	font-size: var(--fs-55);
+	font-family: var(--space);
+	color: var(--primary-color);
+	font-weight: var(--fw-500);
+}
+
+.portfolio .about-txt span {
+	font-size: var(--fs-24);
+	font-family: var(--space);
+	color: var(--white-color);
+	font-weight: var(--fw-500);
+	display: inline-block;
+	margin: 40px 0;
+	width: 75%;
+}
+
+.portfolio .about-txt p {
+	font-size: var(--fs-16);
+	font-family: var(--inter);
+	color: var(--white-color);
+	font-weight: var(--fw-200);
+	display: inline-block;
+	width: 75%;
+}
+
+.portfolio .about-txt img {
+	display: inline-block;
+	margin: 60px 0;
+}
+
+.row1 {
+	margin: 30px auto;
+}
+
+.down-arrow {
+	width: 70px;
+	height: 70px;
+	border: 2px solid var(--primary-color);
+	border-radius: 50%;
+	margin: 20px auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--primary-color);
+	font-size: var(--fs-24);
+	font-weight: var(--fw-900);
+}
+
+/* about end */
+
+/* testnomial start */
+.testmonial {
+	text-align: center;
+	padding: 120px 0 80px;
+}
+
+.testmonial-txt h2 {
+	font-size: var(--fs-55);
+	font-family: var(--space);
+	padding: 0 20px;
+	color: var(--primary-color);
+	font-weight: var(--fw-500);
+}
+
+.testmonial-txt p {
+	font-size: var(--fs-16);
+	padding: 0 20px;
+	margin: 30px 0;
+}
+
+.tst-img img {
+	display: block;
+	margin: 20px auto;
+}
+
+.test-img{
+	overflow: hidden;
+}
+
+.test-img img{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: 0.4s;
+}
+
+.test-img img:hover{
+	transform: scale(1.2);
+	overflow: hidden;
+}
+
+
+/* testnomial end */
